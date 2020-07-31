@@ -60,8 +60,6 @@ const config =  {
           return accumulator;
       },{})
    }
-<<<<<<< HEAD
-=======
 
    export const getCurrentUser=()=>{
      return new Promise((resolve, reject)=>{
@@ -71,7 +69,6 @@ const config =  {
         },reject)
      });
    }
->>>>>>> d80b1caef689541f55515179aa086b75705f788a
 
   firebase.initializeApp(config);
 

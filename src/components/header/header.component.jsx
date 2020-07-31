@@ -17,7 +17,7 @@ import {
   OptionLink
 } from './header.styles';
 
-const Header =({ currentUser, hidden})=>(
+const Header =({ currentUser, hidden,signOutStart})=>(
     <HeaderContainer>
      <LogoContainer to="/">
      <Logo className="logo"/>
@@ -31,11 +31,7 @@ const Header =({ currentUser, hidden})=>(
          </OptionLink>
          {
              currentUser?
-<<<<<<< HEAD
-             <OptionLink as='div' onClick={()=>auth.signOut()}>SIGN OUT</OptionLink>:
-=======
              <OptionLink as='div' onClick={signOutStart}>SIGN OUT</OptionLink>:
->>>>>>> d80b1caef689541f55515179aa086b75705f788a
              <OptionLink className='option' to='/signin'>SIGN IN</OptionLink>
          }
          <CartIcon/>
